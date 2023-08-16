@@ -1,104 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-    <nav>
-        <div class="hero">
-            <img src="img/hero-images/hero-image.png">
-        </div>
+<body class="">
+    
+    <div class="container">
         <header>
-            <div class="navbar">
-                <div class="logo">
-                    <img src="img/logo-navbar.png">
-                </div>
-                <div class="paginasSite">
-                    <a href="index.html">
-                        <h4>Home</h4>
-                    </a>
-                    <a href="produtos.html">
-                        <h4>Produtos</h4>
-                    </a>
-                </div>
-                <div class="pesquisar">
-                    <div class="barraPesquisa">
-                        <div class="searchIcon">
-                            <a href="#navbar">
-                                <img src="img/icons/search-icon.png">
-                            </a>
-                        </div>
-                        <div class="inputPesquisar">
-                            <input type="text" name="search" id="searchInput" placeholder="Pesquisar...">
-                        </div>
-                        <div class="backgroundPesquisar">
-                            <img src="img/components/search-navbar-background.svg">
-                        </div>
-                    </div>
-                    <div class="icons">
-                        <a href="carrinho.html">
-                            <img src="img/icons/carshop-icon.png" alt="Carrinho">
-                        </a>
-                        <a href="cadastro.html">
-                            <img src="img/icons/person-icon.png" alt="Cadastro">
-                        </a>
-                    </div>
-                </div>
+            <h1>Produtos Stanley</h1>
+            <div class="shopping">
+                <img src="image/shopping.svg">
+                <span class="quantity">0</span>
             </div>
         </header>
-    </nav>
-    <br>
-    <div class="container">
-        <div class="content">
-            <div class="imgContent">
-                <img src="img/site/GCCU_Rio-TBD-2.png">
-            </div>
-            <div class="textContent">
-                <h1>COMPROMETIMENTO COM O MEIO AMBIENTE</h1>
-                <h3>Prêmio “Responsabilidade Social Corporativa”</h3>
-                <p>Como uma marca da PMI, todos os produtos <strong>Stanley</strong> são produzidos com a maior
-                    integridade. A partir
-                    dos materiais que usamos para fabricar os produtos, trabalhamos para fazer <strong>o certo pelo
-                        nosso povo,
-                        o nosso planeta, nossa comunidade, e acima de tudo por você.</strong></p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="content">
-            <div class="textContent">
-                <h1>LINHA BAR STANLEY</h1>
-                <h3>Sua cerveja perfeitamente gelada até o último gole!</h3>
-                <p>A linha bar <strong>Stanley</strong> é composta por produtos de <strong>alta qualidade</strong>, como
-                    <strong>copo térmico, caneca térmica e
-                        growler</strong>, projetados especialmente para que você possa apreciar sua cerveja
-                    perfeitamente gelada até
-                    o último gole, independentemente de onde você estiver!
-                </p>
-            </div>
-            <div class="imgContent">
-                <img src="img/site/a11880ce-36d7-4895-a8c8-e8410d31168f.jpg">
-            </div>
-        </div>
-    </div>
-    <br>
-    <footer>
-        <div class="paginasFooter">
-            <a href="index.html">
-                <h4>Home</h4>
-            </a>
-            <a href="produtos.html">
-                <h4>Produtos</h4>
-            </a>
-        </div>
-        <hr>
-        <h5>© 2023 StellarCart, Inc</h5>
-    </footer>
-</body>
 
+        <div class="list">
+          
+        </div>
+    </div>
+    <div class="card">
+        <h1>Seu Carrinho</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Finalizar</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
 </html>
