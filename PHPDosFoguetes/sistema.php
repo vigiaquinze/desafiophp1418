@@ -20,6 +20,6 @@
         echo "<h1>Bem Vindo <u>$logado</u></h1>";
     ?>
 
-    <a href="sair.php"></a>
+    <a href="sair.php">Sair</a>
 </body>
 </html>

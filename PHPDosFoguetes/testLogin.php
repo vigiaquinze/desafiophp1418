@@ -10,23 +10,21 @@ if(!empty($_POST['email']) && !empty($_POST['senha'])){
 
     $result = $conexao->query($sql);
 
-    print_r($sql);
-    print_r($result);
-
     if (mysqli_num_rows($result) < 1) {
         // ñ existe
-        print_r('Não existe!');
         unset($_SESSION['email']);
         unset($_SESSION['senha']);
-        header('Location: Login.php');
+        echo "<script language='javascript' type='text/javascript'> 
+        alert('Login e/ou senha incorreta'); window.location.href='login.html';</script>";
+        die();
     } else {
         // existe
-        print_r('Logado!!');
         $_SESSION['email'] = $email;
         $_SESSION['senha'] = $senha;
         header('Location: sistema.php');
     }
 } else {
-    print_r('Não entra!');
+    echo "<script language='javascript' type='text/javascript'> 
+        alert('Os campos devem ser preenchidos para prosseguir'); window.location.href='login.html';</script>";
 }
 ?>
