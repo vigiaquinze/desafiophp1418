@@ -1,72 +1,85 @@
 @font-face {
     font-family: "Bricolage Grotesque ExtraLight";
     src:
-      local("Bricolage Grotesque ExtraLight"),
-      url("fonts/BricolageGrotesque-ExtraLight.woff2") format("woff2");
-      text-rendering: optimizeLegibility;
-  }
+        local("Bricolage Grotesque ExtraLight"),
+        url("fonts/BricolageGrotesque-ExtraLight.woff2") format("woff2");
+    text-rendering: optimizeLegibility;
+}
+
 @font-face {
     font-family: "Bricolage Grotesque Light";
     src:
-      local("Bricolage Grotesque Light"),
-      url("fonts/BricolageGrotesque-Light.woff2") format("woff2");
-      text-rendering: optimizeLegibility;
-  }
+        local("Bricolage Grotesque Light"),
+        url("fonts/BricolageGrotesque-Light.woff2") format("woff2");
+    text-rendering: optimizeLegibility;
+}
+
 @font-face {
     font-family: "Bricolage Grotesque Regular";
     src:
-      local("Bricolage Grotesque Regular"),
-      url("fonts/BricolageGrotesque-Regular.woff2") format("woff2");
-      text-rendering: optimizeLegibility;
-  }
+        local("Bricolage Grotesque Regular"),
+        url("fonts/BricolageGrotesque-Regular.woff2") format("woff2");
+    text-rendering: optimizeLegibility;
+}
+
 @font-face {
     font-family: "Bricolage Grotesque SemiBold";
     src:
-      local("Bricolage Grotesque SemiBold"),
-      url("fonts/BricolageGrotesque-SemiBold.woff2") format("woff2");
-      text-rendering: optimizeLegibility;
-  }
+        local("Bricolage Grotesque SemiBold"),
+        url("fonts/BricolageGrotesque-SemiBold.woff2") format("woff2");
+    text-rendering: optimizeLegibility;
+}
+
 @font-face {
     font-family: "Bricolage Grotesque Bold";
     src:
-      local("Bricolage Grotesque Bold"),
-      url("fonts/BricolageGrotesque-Bold.woff2") format("woff2");
-      text-rendering: optimizeLegibility;
-  }
+        local("Bricolage Grotesque Bold"),
+        url("fonts/BricolageGrotesque-Bold.woff2") format("woff2");
+    text-rendering: optimizeLegibility;
+}
+
 @font-face {
     font-family: "Bricolage Grotesque ExtraBold";
     src:
-      local("Bricolage Grotesque ExtraBold"),
-      url("fonts/BricolageGrotesque-ExtraBold.woff2") format("woff2");
-  }
-p{
+        local("Bricolage Grotesque ExtraBold"),
+        url("fonts/BricolageGrotesque-ExtraBold.woff2") format("woff2");
+}
+
+p {
     font-family: "Bricolage Grotesque ExtraLight";
 }
-h1{
+
+h1 {
     font-family: "Bricolage Grotesque ExtraBold";
 }
-h2{
+
+h2 {
     font-family: "Bricolage Grotesque Bold";
 }
-h3{
+
+h3 {
     font-family: "Bricolage Grotesque SemiBold";
 }
-h4{
+
+h4 {
     font-family: "Bricolage Grotesque Regular";
 }
-h5{
+
+h5 {
     font-family: "Bricolage Grotesque Light";
 }
-body{
+
+body {
     margin: 0px auto;
 }
-.navbar{
+
+.navbar {
     display: flex;
-    background: #ffffff50;
+    background: #0000001a;
     z-index: 1;
-    position: absolute;
-    top:0px;
-    width: 97.8%;
+    position: fixed;
+    top: 0px;
+    width: 98.7%;
     justify-content: space-between;
     align-items: center;
     border: 1px solid #00000050;
@@ -74,71 +87,121 @@ body{
     padding-right: 20px;
     backdrop-filter: blur(20px);
 }
-.logo{
+.hero{
+    width:1920px;
+}
+.logo {
     display: flex;
 }
-.logo img{
-    width:120px;
+
+.logo img {
+    width: 120px;
 }
-.paginasSite{
+
+.paginasSite {
     display: flex;
     margin-left: 240px;
 }
-.pesquisar{
+
+.pesquisar {
     display: flex;
     align-items: center;
     width: 300px;
     margin-right: 40px;
     padding-inline: 20px;
 }
-.barraPesquisa{
+
+.barraPesquisa {
     display: flex;
     margin-right: 20px;
+    margin-left: -50px;
 }
-.icons{
+
+.icons {
     display: flex;
-    margin-right: 10px;
+    margin-left: 0px;
 }
-.icons img{
-    width:34px;
-    height:34px;
+
+.icons img {
+    width: 34px;
+    height: 34px;
     margin-right: 20px;
 }
-.backgroundPesquisar img{
+
+.backgroundPesquisar img {
     width: 250px;
 }
-.paginasSite h4{
+
+.paginasSite h4 {
     color: #FFF;
     margin-right: 80px;
 }
-.container{
+
+.container {
     display: flex;
     margin: 30px;
     align-items: center;
 }
 
-.content{
+.content {
     display: flex;
     align-items: center;
 }
 
 .imgContent {
     width: 50%;
-    margin:50px;
+    margin: 50px;
 }
+
 .textContent {
     width: 50%;
-    margin:50px;
+    margin: 50px;
     align-items: center;
     text-align: center;
 }
-.textContent h1{
+
+.textContent h1 {
     font-size: 72px;
     margin-bottom: -20px;
 }
 
-.imgContent img{
+.imgContent img {
     width: 818px;
     border-radius: 20px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+    text-align: center;
+    padding: 200px;
+    color: #FFF;
+    background-color: #006652;
+    justify-content: center;
+}
+
+.paginasFooter{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.paginasFooter h4{
+    padding: 0px 40px
+}
+.searchIcon{
+    position: relative;
+    right:-45px;
+    bottom:-4px;
+}
+
+#searchInput{
+    position: absolute;
+    right:169px;
+    bottom:23px;
+    background: none;
+    border: none;
+}
+#searchInput:focus{
+    background: none;
+    border: 0px solid;
+    outline:none;
 }
