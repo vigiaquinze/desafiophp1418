@@ -126,10 +126,10 @@ body {
 .icons {
     display: flex;
     margin-left: 0px;
+    align-items: center;
 }
 
 .icons img {
-    width: 24px;
     height: 24px;
     margin-right: 20px;
 }
