@@ -45,6 +45,10 @@
         url("fonts/BricolageGrotesque-ExtraBold.woff2") format("woff2");
 }
 
+html{
+    transition: 0.6s;
+}
+
 p {
     font-family: "Bricolage Grotesque ExtraLight";
 }
@@ -238,8 +242,8 @@ body {
     padding-right: 20px;
     backdrop-filter: blur(20px);
 }
-.hero{
-    width:1920px;
+.hero img{
+    width:100%;
 }
 .logo {
     display: flex;
@@ -327,6 +331,8 @@ footer {
     color: #FFF;
     background-color: #006652;
     justify-content: center;
+    display: fixed;
+    top:0px;
 }
 
 .paginasFooter{
