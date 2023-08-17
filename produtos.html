@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,59 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/styleprodutos.css">
 </head>
+
 <body class="">
-    
-    <div class="container">
+    <nav>
+        <div class="hero">
+            <img src="img/produtos/">
+        </div>
         <header>
-            <h1>Produtos Stanley</h1>
-            <div class="shopping">
-                <img src="img/icons/carshop-icon-black.svg">
-                <span class="quantity">0</span>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="image/logo-navbar.png">
+                </div>
+                <div class="paginasSite">
+                    <a href="index.html">
+                        <h4>Home</h4>
+                    </a>
+                    <a href="produtos.html">
+                        <h4>Produtos</h4>
+                    </a>
+                </div>
+                <div class="pesquisar">
+                    <div class="barraPesquisa">
+                        <div class="searchIcon">
+                            <a href="#navbar">
+                                <img src="image/search-icon.png">
+                            </a>
+                        </div>
+                        <div class="inputPesquisar">
+                            <input type="text" name="search" id="searchInput" placeholder="Pesquisar...">
+                        </div>
+                        <div class="backgroundPesquisar">
+                            <img src="image/search-navbar-background.svg">
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <a href="cadastro.html">
+                            <img src="image/person-icon.png" alt="Cadastro">
+                        </a>
+                        <div>
+                            <div class="shopping">
+                                <img src="image/shopping.svg">
+                                <span class="quantity">0</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
         </header>
+    </nav>
+    <div class="container">
+            <div class="list">
 
-        <div class="list">
-          
-        </div>
+            </div>
     </div>
     <div class="card">
         <h1>Seu Carrinho</h1>
@@ -32,6 +72,7 @@
         </div>
     </div>
 
-    <script src="produtoscarrinho.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
