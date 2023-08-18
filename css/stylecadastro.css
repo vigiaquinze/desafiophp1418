@@ -159,13 +159,17 @@ body {
     backdrop-filter: blur(20px);
     border-radius: 20px;
     border: 1px solid #00000050;
+    align-items: center;
 }
 
 .content {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    text-align: center;
+    margin: 0px auto;
+    flex-wrap: wrap;
 }
 
 .areaCadastro{
@@ -175,16 +179,41 @@ body {
 }
 
 .inputCadastro{
-    width: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.inputCadastro input:focus{
+    font-family: "Bricolage Grotesque ExtraBold";
+    color: #000000dc;
+    font-size:20px;
+    overflow: hidden;
+    border: 0px solid;
+    outline: none;
 }
 
 .inputCadastro input{
+    font-size: 20px;
     background: #FFF;
-    border-radius: 10px;
+    font-family: "Bricolage Grotesque SemiBold";
+    color: #000000a2;
+    border-radius: 30px;
     border: 1px solid #00000050;
-    padding: 10px;
-    margin: 10px 0px;
+    padding: 15px 0px 15px 20px;
+    margin: 0px;
     width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.inputCadastro input::placeholder{
+    font-size: 18px;
+    color: #000000d3;
+    font-family: "Bricolage Grotesque ExtraLight";
 }
 
 footer {
@@ -195,6 +224,19 @@ footer {
     justify-content: center;
     display: fixed;
     top:0px;
+}
+
+#confirm{
+    background-color: #29C98B;
+    font-family: "Bricolage Grotesque ExtraBold";
+    color: #FFF;
+    width: 35%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-top: 21px;
+    cursor: pointer;
 }
 
 .paginasFooter {
