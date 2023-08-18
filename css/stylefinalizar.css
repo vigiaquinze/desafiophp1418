@@ -111,6 +111,16 @@ header{
     padding: 0px 10px;
 }
 
+.finalizarContainer{
+    display: flex;
+}
+
+.finalizarContainer hr{
+    border: 2px solid #0000007e;
+    width: 75%;
+    margin: 0px;
+}
+
 .addCard{
     background-color: #dadada;
     width: 40%;
@@ -118,6 +128,43 @@ header{
     justify-content: center;
     flex-wrap: wrap;
     border-radius: 20px;
+    align-items: center;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.totalCompra{
+    background-color: #dadada;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    align-items: center;
+    margin: 0px auto;
+    padding: 20px;
+    height: 75%;
+}
+
+#subtotalLabel{
+    color: #0000007e;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.valorTotal{
+    padding: 0px;
+    width: auto;
+    height: 50%;
+    border-radius: 40px;
+    background: #FFF;
+    border: 1px solid #00000050;
+    font-size: 40px;
+    color: #29C98B;
+}
+.valorTotal h2{
+    padding: 0px;
+    margin: 10px;
 }
 
 .titleCard{
@@ -125,13 +172,79 @@ header{
 }
 
 .addCard hr{
-    border-top: 4px solid #0000007e;
+    border: 2px solid #0000007e;
     width: 75%;
+    margin: 30px 0px;
 }
 
 .titleCard h1{
     color: #0000007e;
-    padding: 20px;
+    padding: 0px 20px;
+}
+
+
+.inputsCard{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.inputsCard input:focus{
+    font-family: "Bricolage Grotesque ExtraBold";
+    color: #000000dc;
+    font-size:20px;
+    overflow: hidden;
+    border: 0px solid;
+    outline: none;
+}
+
+.valorSubtotal{
+    display: flex;
+    align-items: center;
+}
+
+.inputsCard input{
+    font-size: 20px;
+    background: #FFF;
+    font-family: "Bricolage Grotesque SemiBold";
+    color: #000000a2;
+    border-radius: 30px;
+    border: 1px solid #00000050;
+    padding: 15px 0px 15px 20px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.valorConfirma{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.inputsCard input::placeholder{
+    font-size: 18px;
+    color: #000000d3;
+    font-family: "Bricolage Grotesque ExtraLight";
+}
+#confirm{
+    background-color: #29C98B;
+    font-family: "Bricolage Grotesque ExtraBold";
+    font-size: 28px;
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-top: 21px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
 }
 .list{
     display: grid;

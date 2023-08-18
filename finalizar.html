@@ -51,21 +51,52 @@
                                 <span class="quantity">0</span>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
         </header>
     </nav>
-    <div class="addCard">
-        <div class="titleCard">
-            <img src="img/icons/card-icon.svg">
-            <h1>Adicionar um cartão</h1>
+    <div class="finalizarContainer">
+        <div class="addCard">
+            <div class="titleCard">
+                <img src="img/icons/card-icon.svg">
+                <h1>Adicionar um cartão</h1>
+            </div>
+            <hr>
+            <div class="inputsCard">
+                <input type="text" name="numeroCartao" id="numeroCartao" placeholder="Número do cartão"
+                    style="background-image: url('img/icons/card-icon.svg'); background-size: 25px; background-repeat: no-repeat;  background-position: 20px 10px; padding: 12px 45px 12px 60px;">
+                <br>
+                <input type="username" name="username" id="username" placeholder="Nome do titular"
+                    style="background-image: url('img/icons/person-icon-black.svg'); background-size: 25px; background-repeat: no-repeat;  background-position: 20px 15px; padding: 12px 45px 12px 60px;">
+                <br>
+                <input type="text" name="validadeCartao" id="validadeCartao" placeholder="Validade do cartão (MM/AA)"
+                    style="background-image: url('img/icons/calendar-icon.svg'); background-size: 25px; background-repeat: no-repeat;  background-position: 20px 15px; padding: 12px 45px 12px 60px;">
+                <br>
+                <input type="text" name="cpf" id="cpf" placeholder="CPF/CNPJ do titular"
+                    style="background-image: url('img/icons/cpf-icon.svg'); background-size: 25px; background-repeat: no-repeat;  background-position: 20px 15px; padding: 12px 45px 12px 60px;">
+                <br>
+            </div>
         </div>
-        <hr>
-    </div>
-    <div class="totalCompra">
-
+        <div class="totalCompra">
+            <div class="titleCard">
+                <img src="img/icons/carshop-icon-black-50.svg" fill-opacity="50%">
+                <h1>Resumo do pedido</h1>
+            </div>
+            <hr>
+            <div class="valorConfirma">
+                <div class="valorSubtotal">
+                    <h2 id="subtotalLabel">Subtotal</h2>
+                    <div class="valorTotal">
+                        <h2>R$1000,00</h2>
+                    </div>
+                </div>
+                <div class="confirm">
+                    <input type="submit" value="Finalizar compra" id="confirm">
+                </div>
+            </div>
+        </div>
     </div>
     <div class="card">
         <h1>Seu Carrinho</h1>
