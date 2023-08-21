@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    if ((!isset($_SESSION['email'])==true) and (!isset($_SESSION['senha'])==true)) {
+        echo "<script language='javascript' type='text/javascript'> 
+        alert('Para finalizar uma compra você deve estar logado'); window.location.href='cadastro.html';</script>";   
+    }
+
+    $logado = $_SESSION['email'];
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
