@@ -1,11 +1,11 @@
 <?php
-    session_start();
-    if ((!isset($_SESSION['email'])==true) and (!isset($_SESSION['senha'])==true)) {
-        echo "<script language='javascript' type='text/javascript'> 
-        alert('Para finalizar uma compra você deve estar logado'); window.location.href='cadastro.html';</script>";   
-    }
+session_start();
+if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)) {
+    echo "<script language='javascript' type='text/javascript'> 
+        alert('Para finalizar uma compra você deve estar logado'); window.location.href='cadastro.html';</script>";
+}
 
-    $logado = $_SESSION['email'];
+$logado = $_SESSION['email'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -74,17 +74,13 @@
             </div>
             <hr>
             <div class="inputsCard">
-                <input type="text" name="numeroCartao" id="numeroCartao" placeholder="Número do cartão"
-                    style="background-image: url('img/icons/card-icon.svg'); background-size: 25px; background-repeat: no-repeat;  background-position: 20px 10px; padding: 12px 45px 12px 60px;">
+                <input type="text" name="numeroCartao" id="numeroCartao" placeholder="Número do cartão" style="background-image: url('img/icons/card-icon.svg'); background-size: 25px; background-repeat: no-repeat;  background-position: 20px 10px; padding: 12px 45px 12px 60px;">
                 <br>
-                <input type="username" name="username" id="username" placeholder="Nome do titular"
-                    style="background-image: url('img/icons/person-icon-black.svg'); background-size: 25px; background-repeat: no-repeat;  background-position: 20px 15px; padding: 12px 45px 12px 60px;">
+                <input type="username" name="username" id="username" placeholder="Nome do titular" style="background-image: url('img/icons/person-icon-black.svg'); background-size: 25px; background-repeat: no-repeat;  background-position: 20px 15px; padding: 12px 45px 12px 60px;">
                 <br>
-                <input type="text" name="validadeCartao" id="validadeCartao" placeholder="Validade do cartão (MM/AA)"
-                    style="background-image: url('img/icons/calendar-icon.svg'); background-size: 25px; background-repeat: no-repeat;  background-position: 20px 15px; padding: 12px 45px 12px 60px;">
+                <input type="text" name="validadeCartao" id="validadeCartao" placeholder="Validade do cartão (MM/AA)" style="background-image: url('img/icons/calendar-icon.svg'); background-size: 25px; background-repeat: no-repeat;  background-position: 20px 15px; padding: 12px 45px 12px 60px;">
                 <br>
-                <input type="text" name="cpf" id="cpf" placeholder="CPF/CNPJ do titular"
-                    style="background-image: url('img/icons/cpf-icon.svg'); background-size: 25px; background-repeat: no-repeat;  background-position: 20px 15px; padding: 12px 45px 12px 60px;">
+                <input type="text" name="cpf" id="cpf" placeholder="CPF/CNPJ do titular" style="background-image: url('img/icons/cpf-icon.svg'); background-size: 25px; background-repeat: no-repeat;  background-position: 20px 15px; padding: 12px 45px 12px 60px;">
                 <br>
             </div>
         </div>
@@ -97,12 +93,10 @@
             <div class="valorConfirma">
                 <div class="valorSubtotal">
                     <h2 id="subtotalLabel">Subtotal</h2>
-                    <div class="valorTotal">
-                        <h2>R$1000,00</h2>
-                    </div>
+                    <div class="total"></div>
                 </div>
                 <div class="confirm">
-                    <input type="submit" value="Finalizar compra" id="confirm">
+                    <input type="submit" value="Finalizar compra" id="confirm" onclick="">
                 </div>
             </div>
         </div>
@@ -130,6 +124,7 @@
         <h5>© 2023 StellarCart, Inc</h5>
     </footer>
     <script src="produtoscarrinho.js"></script>
+    <script src="finalizar.js"></script>
 </body>
 
 </html>
