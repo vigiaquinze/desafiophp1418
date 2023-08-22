@@ -5,13 +5,15 @@ let listCard = document.querySelector('.listCard');
 let body = document.querySelector('body');
 let total = document.querySelector('.total');
 let quantity = document.querySelector('.quantity');
+var totalP = 0;
 
-openShopping.addEventListener('click', ()=>{
+openShopping.addEventListener('click', () => {
     body.classList.add('active');
 })
-closeShopping.addEventListener('click', ()=>{
+closeShopping.addEventListener('click', () => {
     body.classList.remove('active');
 })
+
 
 let products = [
     {
@@ -87,9 +89,9 @@ let products = [
         price: 245
     }
 ];
-let listCards  = [];
-function initApp(){
-    products.forEach((value, key) =>{
+let listCards = [];
+function initApp() {
+    products.forEach((value, key) => {
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
@@ -101,22 +103,22 @@ function initApp(){
     })
 }
 initApp();
-function addToCard(key){
-    if(listCards[key] == null){
+function addToCard(key) {
+    if (listCards[key] == null) {
         // copy product form list to list card
         listCards[key] = JSON.parse(JSON.stringify(products[key]));
         listCards[key].quantity = 1;
     }
     reloadCard();
 }
-function reloadCard(){
+function reloadCard() {
     listCard.innerHTML = '';
     let count = 0;
     let totalPrice = 0;
-    listCards.forEach((value, key)=>{
+    listCards.forEach((value, key) => {
         totalPrice = totalPrice + value.price;
         count = count + value.quantity;
-        if(value != null){
+        if (value != null) {
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
                 <div><img src="img/produtos/${value.image}"/></div>
@@ -128,18 +130,42 @@ function reloadCard(){
                     <button onclick="changeQuantity(${key}, ${value.quantity + 1})">+</button>
                 </div>
                 </br>`;
-                listCard.appendChild(newDiv);
+            listCard.appendChild(newDiv);
         }
     })
-    total.innerText = "R$"+totalPrice.toLocaleString()+",00";
+    total.innerText = "R$" + totalPrice.toLocaleString() + ",00";
+    totalP = totalPrice;
     quantity.innerText = count;
 }
-function changeQuantity(key, quantity){
-    if(quantity == 0){
+
+
+function changeQuantity(key, quantity) {
+    if (quantity == 0) {
         delete listCards[key];
-    }else{
+    } else {
         listCards[key].quantity = quantity;
         listCards[key].price = quantity * products[key].price;
     }
     reloadCard();
 }
+
+const purchaseButton = document.getElementsByClassName("finalShopping")[0]
+purchaseButton.addEventListener("click", fazerCompra)
+
+function fazerCompra() {
+    if (totalP == 0) {
+        alert("Seu carrinho está vazio!");
+    } else {
+        alert(`Obrigado pela compra!!
+        \nValor do produto: R$ ${totalP},00`);
+        window.location.href = "finalizar.php";
+    }
+}
+
+
+const finalCompraBody = document.querySelector('valorTotal');
+finalCompraBody.innerHTML = `<h2> R$${totalP}</h2>`;
+
+
+
+

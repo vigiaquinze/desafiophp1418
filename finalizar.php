@@ -56,7 +56,7 @@ $logado = $_SESSION['email'];
                         </a>
                         <div>
                             <div class="shopping">
-                                <img src="img/icons/carshop-icon.svg">
+                                <img src="img/icons/carshop-icon.svg" onclick="finaliza()">
                                 <span class="quantity">0</span>
                             </div>
                         </div>
@@ -93,10 +93,12 @@ $logado = $_SESSION['email'];
             <div class="valorConfirma">
                 <div class="valorSubtotal">
                     <h2 id="subtotalLabel">Subtotal</h2>
-                    <div class="total"></div>
+                    <div class="valorTotal" id="valorFinal">
+                        <h2>R$ 10,00</h2>
+                    </div>
                 </div>
                 <div class="confirm">
-                    <input type="submit" value="Finalizar compra" id="confirm" onclick="">
+                    <input type="submit" value="Finalizar compra" id="confirm" onclick="finalizaCompra()">
                 </div>
             </div>
         </div>
@@ -123,8 +125,8 @@ $logado = $_SESSION['email'];
         <hr>
         <h5>© 2023 StellarCart, Inc</h5>
     </footer>
-    <script src="produtoscarrinho.js"></script>
     <script src="finalizar.js"></script>
+    <script src="produtoscarrinho.js"></script>
 </body>
 
 </html>
